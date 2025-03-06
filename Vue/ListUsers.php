@@ -16,12 +16,12 @@ $utilisateurs = $userController->getUsers();
     <title>Liste des utilisateurs</title>
     <style>
         :root {
-            --bg-color: #f0f0f5;
-            --text-color: #333;
-            --table-bg: #fff;
-            --primary-color: #4CAF50;
-            --danger-color: #f44336;
-            --hover-color: #f1f1f1;
+            --bg-color: #2c2c2c; /* Gris foncé */
+            --text-color: #ffffff; /* Blanc */
+            --table-bg: #1e1e2f; /* Bleu nuit */
+            --primary-color: #FFA726; /* Orange */
+            --danger-color: #E53935; /* Rouge vif */
+            --hover-color: #33334d; /* Bleu nuit clair */
         }
 
         body {
@@ -47,7 +47,7 @@ $utilisateurs = $userController->getUsers();
             background: var(--table-bg);
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
             overflow-x: auto;
         }
 
@@ -60,12 +60,12 @@ $utilisateurs = $userController->getUsers();
         th, td {
             padding: 12px;
             text-align: center;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #444;
         }
 
         th {
-            background-color: var(--primary-color);
-            color: white;
+            background-color: #FFD700; /* Or */
+            color: black;
             font-size: 16px;
         }
 
@@ -86,14 +86,14 @@ $utilisateurs = $userController->getUsers();
             background-color: var(--primary-color);
         }
         .btn-update:hover {
-            background-color: #388E3C;
+            background-color: #EF6C00; /* Orange foncé */
         }
 
         .btn-delete {
             background-color: var(--danger-color);
         }
         .btn-delete:hover {
-            background-color: #D32F2F;
+            background-color: #B71C1C; /* Rouge foncé */
         }
 
         @media (max-width: 600px) {

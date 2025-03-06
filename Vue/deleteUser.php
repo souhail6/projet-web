@@ -19,18 +19,18 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
             $statutSuppression = $userController->deleteUser($idUtilisateur);
 
             if ($statutSuppression) {
-                $messageSucces = "✅ Utilisateur supprimé avec succès !";
+                $messageSucces = "Utilisateur supprimé avec succès !";
                 header("Location: listUsers.php"); // Redirection après suppression
                 exit();
             } else {
-                $messageErreur = "❌ La suppression a échoué.";
+                $messageErreur = "La suppression a échoué.";
             }
         }
     } else {
-        $messageErreur = "❌ Utilisateur introuvable.";
+        $messageErreur = "Utilisateur introuvable.";
     }
 } else {
-    $messageErreur = "❌ ID utilisateur manquant ou invalide.";
+    $messageErreur = "ID utilisateur manquant ou invalide.";
 }
 ?>
 

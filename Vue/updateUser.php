@@ -14,10 +14,10 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $utilisateur = $userController->getUserById($_GET['id']);
 
     if (!$utilisateur) {
-        die("❌ Utilisateur non trouvé !");
+        die(" Utilisateur non trouvé !");
     }
 } else {
-    die("❌ ID utilisateur invalide !");
+    die(" ID utilisateur invalide !");
 }
 
 // Traitement de la soumission du formulaire
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['update'])) {
         header("Location: ListUsers.php");
         exit();
     } else {
-        echo "<p style='color:red;'>❌ Tous les champs sont obligatoires !</p>";
+        echo "<p style='color:red;'>Tous les champs sont obligatoires !</p>";
     }
 }
 ?>
